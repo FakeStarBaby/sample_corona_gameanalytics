@@ -1,0 +1,3 @@
+[submodule "gameanalytics"]
+	path = gameanalytics
+	url = git@github.com:GameAnalytics/GA-Corona-SDK.git
