@@ -1,4 +1,3 @@
-sample_corona_gameanalytics
-===========================
+# sample_corona_gameanalytics
 
 GameAnalytics sample apps.
