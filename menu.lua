@@ -1,6 +1,8 @@
 local storyboard = require("storyboard")
 local scene = storyboard.newScene()
 
+local GA = require ("gameAnalytics.GameAnalytics")
+
 function scene:createScene(event)
   local group = self.view
 
@@ -13,7 +15,8 @@ function scene:createScene(event)
   local title = widget.newButton{
     label = "MENU",
     onRelease = function(event)
-      storyboard.gotoScene("stage1")
+      GA.newEvent("design", { event_id = "btn:click" })
+      storyboard.gotoScene("stage1", "fade", 500)
     end,
   }
   title.x = display.contentCenterX

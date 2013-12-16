@@ -13,7 +13,7 @@ function scene:createScene(event)
   local title = widget.newButton{
     label = "STAGE1",
     onRelease = function(event)
-      storyboard.gotoScene("stage2")
+      storyboard.gotoScene("stage2", "fade", 500)
     end,
   }
   title.x = display.contentCenterX
